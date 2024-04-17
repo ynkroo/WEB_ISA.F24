@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Passwort Generator</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="generator.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Passwort Generator</h1>
+    </header>
+    <button id="pressButton">Generate new password</button>
+    <!-- Display area for the generated password -->
+    <input type="text" id="passwordBox" readonly />
+  </body>
 </html>

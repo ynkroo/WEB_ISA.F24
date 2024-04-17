@@ -1,0 +1,11 @@
+{
+    "name": "Passwort Generator",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "A basic extension for password generation",
+    "permissions": ["scripting", "activeTab", "storage"],
+    "action": {
+        "default_icon": "icon.png",
+        "default_popup": "index.html"
+    }
+  }
