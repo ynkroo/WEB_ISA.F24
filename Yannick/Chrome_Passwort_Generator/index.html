@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' https://ajax.googleapis.com"
+    />
+
+    <title>Passwort Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Passwort Generator</h1>
+    </header>
+    <main>
+      <button id="pressButton"><h2>Generate</h2></button>
+      <div>
+        <input type="text" id="passwordBox" aria-label="Generated password" />
+      </div>
+    </main>
+    <section class="disclaimer">
+      <h4>
+        Disclaimer: Parameters are defined as strings of 16 characters,
+        including numbers and special characters.
+      </h4>
+    </section>
+    <footer>
+      <p>
+        This content is for educational purposes only. Users should not rely on
+        this as professional advice.
+      </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="generator.js"></script>
+  </body>
+</html>
