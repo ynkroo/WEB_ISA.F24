@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Checker</title>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Password Strength Checker</h2>
+    <input type="text" id="passwordInput" placeholder="Enter your password" />
+    <div>
+      <input type="checkbox" id="lengthCheckbox" disabled />
+      <label class="condition" for="lengthCheckbox"
+        >Password is long enough (at least 8 characters)</label
+      >
+    </div>
+    <div>
+      <input type="checkbox" id="uppercaseCheckbox" disabled />
+      <label class="condition" for="uppercaseCheckbox"
+        >Password contains uppercase letter</label
+      >
+    </div>
+    <div>
+      <input type="checkbox" id="lowercaseCheckbox" disabled />
+      <label class="condition" for="lowercaseCheckbox"
+        >Password contains lowercase letter</label
+      >
+    </div>
+    <div>
+      <input type="checkbox" id="numberCheckbox" disabled />
+      <label class="condition" for="numberCheckbox"
+        >Password contains a number</label
+      >
+    </div>
+    <button onclick="checkPassword()">Check Password</button>
+    <p id="result"></p>
+  </body>
+</html>
