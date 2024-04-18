@@ -15,14 +15,14 @@ body {
   font-weight: 500;
   font-style: normal;
   background-color: #101011;
-  border: 2px solid #ee4865;
+  border: 2px solid #ff204e;
   border-radius: 10px;
 }
 
 h1 {
   font-size: 2rem;
   font-weight: 800;
-  color: #ee4865;
+  color: #ff204e;
 }
 
 h2 {
@@ -32,7 +32,7 @@ h2 {
 
 p {
   font-size: 0.75rem;
-  color: #ee486445;
+  color: #ff204d55;
 }
 
 main {
@@ -55,32 +55,32 @@ button,
 
 button {
   background-color: transparent;
-  border: 2px solid #ee4865;
-  color: #ee4865;
+  border: 2px solid #ff204e;
+  color: #ff204e;
   transition-duration: 0.4s;
 }
 
 button:hover {
-  background-color: #ee4865;
+  background-color: #ff204e;
   color: #101223;
 }
 
 #passwordBox {
-  background-color: #ee4865;
+  background-color: #ff204e;
   border: none;
   font-weight: 800;
   color: #101223;
-  border: 1px solid #ee4865;
+  border: 1px solid #ff204e;
 }
 
 h4 {
   font-size: 1rem;
-  color: #ee486445;
+  color: #ff204d55;
   font-weight: 500;
 }
 
 .disclaimer {
-  border-top: 1px solid #ee486445;
+  border-top: 1px solid #ff204d55;
   margin-top: 100px;
   padding-top: 12px;
 }
