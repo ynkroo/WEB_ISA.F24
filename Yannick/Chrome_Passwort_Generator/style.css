@@ -89,3 +89,9 @@ footer {
   margin-top: 24px;
   padding-top: 8px;
 }
+
+::placeholder {
+  font-size: 1rem;
+  color: #101011;
+  font-weight: 500;
+}
