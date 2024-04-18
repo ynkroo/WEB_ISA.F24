@@ -15,3 +15,9 @@ _Unter dem Ordner **Resources** sammeln wir gute Ideen, dient als Sammelsurium o
 
 > - Entwicklung einer Test-Chrome-Extension (Passwort-Generator)
 >   <br> -> Verstehen des Aufbaus und der Funktionsweise von Chrome-Extensions. _Verfasst von Yannick_
+
+**Random password generator:**<br>
+https://ynkroo.github.io/WEB_ISA.F24/Yannick/Chrome_Passwort_Generator/index.html
+
+**Password Strength Checker:**<br>
+https://ynkroo.github.io/WEB_ISA.F24/Mike/Password_Checker_Extension/popup.html
