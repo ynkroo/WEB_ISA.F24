@@ -8,13 +8,13 @@
 }
 
 body {
-  margin: 32px;
+  margin: 24px;
   padding: 1rem;
-  width: 450px;
+  width: 400px;
   height: auto;
   font-weight: 500;
   font-style: normal;
-  background-color: #101011;
+  background-color: #000c1b;
   border: 2px solid #ff204e;
   border-radius: 10px;
 }
