@@ -32,3 +32,9 @@ https://ynkroo.github.io/WEB_ISA.F24/Mike/Password_Checker_Extension/popup.html
 - Entwicklung einer Dashboard-Erweiterung mit ECTS-Anzeige und Fortschrittsbalken.
 - Sidebar für Schnellzugriffe auf wichtige Informationen.
 - Verbesserung der Studienplanung und Potenzial für Weiterentwicklungen.
+
+**Styleguide für unsere Dashboard-Extension:**
+![Styleguide](Resources/assets/Styleguide.png)
+
+**1st Draft vom Design:**
+![Draft Dashboard](Resources/assets/Draft_Dashboard.png)
