@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "FSAlbert-Bold";
+  src: url("Resources/Fonts/fs-albert-font-family/FSAlbert-Bold.otf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "FSAlbert-ExtraBold";
+  src: url("Resources/Fonts/fs-albert-font-family/FSAlbert-ExtraBold.otf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "FSAlbert-Light";
+  src: url("Resources/Fonts/fs-albert-font-family/FSAlbert-Light.otf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "FSAlbert-Regular";
+  src: url("Resources/Fonts/fs-albert-font-family/FSAlbert-Regular.otf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "FSAlbert-Thin";
+  src: url("Resources/Fonts/fs-albert-font-family/FSAlbert-Thin.otf")
+    format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Blau-50: #f3f9fc;
+  --Blau-200-HSLU-Main: #bae0ea;
+  --Blau-400: #62bcce;
+  --Blau-600: #2d859c;
+  --Blau-800: #225b6a;
+  --Blau-950: #16313b;
+}
+
+body {
+  font-family: "FSAlbert-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  width: 800px;
+  height: 600px;
+  display: flex;
+}
+
+.sidebar {
+  width: 208px;
+  background-color: var(--Blau-50);
+  padding: 16px;
+}
+
+.ects-overview {
+  width: calc(100% - 208px);
+  padding: 16px;
+}
