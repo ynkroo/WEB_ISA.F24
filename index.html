@@ -8,17 +8,59 @@
   </head>
   <body>
     <div class="sidebar">
-      <img
-        id="dashboard-logo"
-        src="Resources/assets/MyCampusDashboard_Logo.svg"
-        alt="MyCampus Dashboard Logo"
-      />
-      <div>Quick Links</div>
-      <div
-        class="link-element"
-        onclick="window.open('https://www.example.com')"
-      >
-        myCampus
+      <div>
+        <img
+          id="dashboard-logo"
+          src="Resources/assets/MyCampusDashboard_Logo.svg"
+          alt="MyCampus Dashboard Logo"
+        />
+        <div id="quick-links">
+          <div id="quick-links-title">Quick Links</div>
+          <div
+            class="link-element"
+            onclick="window.open('https://www.example.com')"
+          >
+            <img
+              class="quick-link-icon"
+              src="Resources/assets/myCampus_Icon.svg"
+              alt="myCampus Icon"
+            />
+            myCampus
+          </div>
+          <div
+            class="link-element"
+            onclick="window.open('https://www.example.com')"
+          >
+            <img
+              class="quick-link-icon"
+              src="Resources/assets/Moduleinschreibungen_Icon.svg"
+              alt="Moduleinschreibungen Icon"
+            />
+            Moduleinschreibungen
+          </div>
+          <div
+            class="link-element"
+            onclick="window.open('https://www.example.com')"
+          >
+            <img
+              class="quick-link-icon"
+              src="Resources/assets/infos_und_dokumente_Icon.svg"
+              alt="INfos und Dokumente Icon"
+            />
+            Infos und Dokumente
+          </div>
+          <div
+            class="link-element"
+            onclick="window.open('https://www.example.com')"
+          >
+            <img
+              class="quick-link-icon"
+              src="Resources/assets/account_icon.svg"
+              alt="Account Icon"
+            />
+            Account
+          </div>
+        </div>
       </div>
       <img
         id="hslu-logo"
@@ -26,7 +68,18 @@
         alt="HSLU Logo"
       />
     </div>
-    <div class="ects-overview"></div>
+
+    <div class="ects-overview">
+      <div id="total-points-container">
+        <div class="container-title">Du hast momentan</div>
+      </div>
+      <div id="moduleinschreibungen-container">
+        <div class="container-title">Neue Moduleinschreibungen</div>
+      </div>
+      <div id="semester-uebersicht-container">
+        <div class="container-title">ECTS Punkte Semester Übersicht</div>
+      </div>
+    </div>
     <script src="popup.js"></script>
   </body>
 </html>
