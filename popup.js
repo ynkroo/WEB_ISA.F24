@@ -12,11 +12,6 @@ function onPage() {
   });
 }
 
-function notOnPage() {
-  document.getElementById("onPage").style.display = "none";
-  document.getElementById("notOnPage").style.display = "block";
-}
-
 // Load content with ECTS
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   if (message.sendECTS) {
@@ -50,13 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let url = tabs[0].url;
     if (
       url ==
-        "https://mycampus.hslu.ch/de-ch/stud-i/mein-studium/meine-anmeldungen/" ||
-      url ==
-        "https://mycampus.hslu.ch/en/stud-i/mein-studium/meine-anmeldungen/"
+      "https://mycampus.hslu.ch/de-ch/stud-i/mein-studium/meine-anmeldungen/"
     ) {
       onPage();
     } else {
-      notOnPage();
     }
   });
 });
