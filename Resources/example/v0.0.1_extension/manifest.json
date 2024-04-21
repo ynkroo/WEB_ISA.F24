@@ -3,7 +3,7 @@
   "name": "ECTS counter for HSLU",
   "version": "1.0.0",
   "description": "Desc",
-  "permissions": ["scripting", "activeTab", "storage"] 
+  "permissions": ["scripting", "activeTab", "storage"],
   "action": {
     "default_popup": "popup.html"
   },

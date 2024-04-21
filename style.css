@@ -107,6 +107,9 @@ body {
   width: 256px;
   padding: 16px;
   background-color: var(--Blau-200-HSLU-Main);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #moduleinschreibungen-container {
@@ -123,5 +126,16 @@ body {
 
 .container-title {
   font-family: "FSAlbert-Bold", sans-serif;
+  color: var(--Blau-800);
+}
+
+.ectsNum {
+  font-family: "FSAlbert-ExtraBold", sans-serif;
+  font-size: 80px;
+  color: var(--Blau-800);
+  margin-right: 16px;
+}
+
+.ectsDesc {
   color: var(--Blau-800);
 }
