@@ -21,3 +21,14 @@ https://ynkroo.github.io/WEB_ISA.F24/Yannick/Chrome_Passwort_Generator/index.htm
 
 **Password Strength Checker:**<br>
 https://ynkroo.github.io/WEB_ISA.F24/Mike/Password_Checker_Extension/popup.html
+
+### 21. April 2024
+
+> Nach einigen Tests und Diskussionen im Team haben wir beschlossen, unseren Fokus von der Lernplattform Ilias auf myCampus zu verlagern. Wir planen, eine Dashboard-Erweiterung für myCampus zu entwickeln. Diese Erweiterung soll nicht nur die gesamten ECTS-Punkte anzeigen, sondern auch aufschlüsseln, wie viele Punkte die Nutzer:innen pro Semester erreichen müssen bzw. bereits erreicht haben. Zusätzlich wird eine Fortschrittsanzeige über den gesamten Studienverlauf integriert. Mit diesen Funktionen wird die Planung des Studiums erleichtert. Zudem wird das Dashboard um eine Sidebar erweitert, die Schnellzugriffe auf schwer auffindbare Informationen bietet. Diese Erweiterung des Dashboards bietet ausgezeichnete Möglichkeiten für zukünftige Weiterentwicklungen.
+
+**Kurz und bündig:**
+
+- Wechsel des Entwicklungsziels von Ilias zu myCampus.
+- Entwicklung einer Dashboard-Erweiterung mit ECTS-Anzeige und Fortschrittsbalken.
+- Sidebar für Schnellzugriffe auf wichtige Informationen.
+- Verbesserung der Studienplanung und Potenzial für Weiterentwicklungen.
