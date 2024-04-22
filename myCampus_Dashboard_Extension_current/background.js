@@ -1,5 +1,5 @@
 function getECTS() {
-  let ects = [0, 0, 0]; // Array to hold ECTS for Successfully Participated, Confirmed, and Other
+  let ects = [0, 0, 0];
 
   function isNumber(value) {
     return typeof value === "number" && !isNaN(value);
@@ -8,49 +8,49 @@ function getECTS() {
   function searchForEcts(element) {
     let ects = 0;
     if (element) {
-      if (
-        element.nodeType === Node.TEXT_NODE &&
-        element.textContent.includes("ECTS")
-      ) {
-        let ectsValue = element.textContent.match(/\d+/); // Extract numbers from the text containing 'ECTS'
-        if (ectsValue && ectsValue.length > 0) {
-          ects = parseInt(ectsValue[0], 10);
+      if (element.nodeType === Node.TEXT_NODE) {
+        if (element.textContent.includes("ECTS")) {
+          ects = Number(element.parentElement.nextElementSibling.innerHTML);
           if (isNumber(ects)) {
             return ects;
           }
         }
-      } else if (element.childNodes.length > 0) {
-        element.childNodes.forEach((child) => {
-          ects += searchForEcts(child);
-        });
+      } else {
+        if (element.childNodes.length > 0) {
+          element.childNodes.forEach(function (child) {
+            ects += searchForEcts(child);
+          });
+        }
       }
     }
     return ects;
   }
 
-  document.querySelectorAll(".list-item").forEach(function (liElement) {
-    let ectsTemp = searchForEcts(liElement);
-    let ectsCategory = liElement.querySelector(".information")
-      ? liElement.querySelector(".information").textContent.trim()
-      : "";
+  document
+    .getElementById("fl")
+    .querySelectorAll("li.list-item")
+    .forEach(function (liElement) {
+      let ectsTemp = searchForEcts(liElement);
+      let ects_kategorie = liElement
+        .getElementsByClassName("information")[1]
+        .firstElementChild.textContent.trim();
+      if (ects_kategorie == "Erfolgreich teilgenommen") {
+        ects[0] += ectsTemp;
+      } else if (ects_kategorie == "Bestätigt") {
+        ects[1] += ectsTemp;
+      } else {
+        ects[2] += ectsTemp;
+      }
+    });
 
-    if (ectsCategory === "Erfolgreich teilgenommen") {
-      ects[0] += ectsTemp;
-    } else if (ectsCategory === "Bestätigt") {
-      ects[1] += ectsTemp;
-    }
-  });
-
-  // Calculate the total ECTS for 'Successfully Participated' and 'Confirmed'
-  let totalECTS = ects[0] + ects[1];
-
-  // Update the .ectsNum elements with the total ECTS
-  document.querySelectorAll(".ectsNum").forEach((element) => {
-    element.textContent = `Total ECTS: ${totalECTS}`;
-  });
+  chrome.runtime.sendMessage({ sendECTS: ects });
 }
 
-// Example of how to invoke this function on document load or based on some event
-document.addEventListener("DOMContentLoaded", function () {
-  getECTS();
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  if (message.getECTS) {
+    chrome.scripting.executeScript({
+      target: { tabId: sender.tab.id },
+      function: getECTS,
+    });
+  }
 });
