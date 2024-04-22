@@ -1,31 +1,26 @@
 @font-face {
   font-family: "FSAlbert-Bold";
-  src: url("Resources/Fonts/fs-albert-font-family/FSAlbert-Bold.otf")
-    format("truetype");
+  src: url("fs-albert-font-family/FSAlbert-Bold.otf") format("truetype");
 }
 
 @font-face {
   font-family: "FSAlbert-ExtraBold";
-  src: url("Resources/Fonts/fs-albert-font-family/FSAlbert-ExtraBold.otf")
-    format("truetype");
+  src: url("fs-albert-font-family/FSAlbert-ExtraBold.otf") format("truetype");
 }
 
 @font-face {
   font-family: "FSAlbert-Light";
-  src: url("Resources/Fonts/fs-albert-font-family/FSAlbert-Light.otf")
-    format("truetype");
+  src: url("fs-albert-font-family/FSAlbert-Light.otf") format("truetype");
 }
 
 @font-face {
   font-family: "FSAlbert-Regular";
-  src: url("Resources/Fonts/fs-albert-font-family/FSAlbert-Regular.otf")
-    format("truetype");
+  src: url("fs-albert-font-family/FSAlbert-Regular.otf") format("truetype");
 }
 
 @font-face {
   font-family: "FSAlbert-Thin";
-  src: url("Resources/Fonts/fs-albert-font-family/FSAlbert-Thin.otf")
-    format("truetype");
+  src: url("fs-albert-font-family/FSAlbert-Thin.otf") format("truetype");
 }
 
 * {
