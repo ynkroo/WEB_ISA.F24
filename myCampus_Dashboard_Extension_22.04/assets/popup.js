@@ -49,9 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let url = tabs[0].url;
     if (
       url ==
-        "https://mycampus.hslu.ch/de-ch/stud-i/mein-studium/meine-anmeldungen/" ||
-      url ==
-        "https://mycampus.hslu.ch/en/stud-i/mein-studium/meine-anmeldungen/"
+      "https://mycampus.hslu.ch/de-ch/stud-i/mein-studium/meine-anmeldungen/"
     ) {
       onPage();
     } else {
