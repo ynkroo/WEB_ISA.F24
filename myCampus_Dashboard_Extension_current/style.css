@@ -119,6 +119,9 @@ body {
   height: 256px;
   padding: 16px;
   background-color: var(--Blau-50);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #semester-uebersicht-container {
@@ -159,4 +162,22 @@ body {
   padding: 12px 0px;
   display: flex;
   justify-content: space-between;
+}
+
+.container-module {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.termin-1,
+.termin-2,
+.termin-3 {
+  display: flex;
+  width: 224px;
+  padding: 4px 16px;
+  align-items: flex-end;
+  border-left: 4px solid var(--Blau-600);
+  background-color: white;
 }
