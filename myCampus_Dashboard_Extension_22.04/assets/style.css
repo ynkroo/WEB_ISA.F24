@@ -47,6 +47,11 @@ body {
   display: flex;
 }
 
+#notOnPage,
+#onPage {
+  display: none;
+}
+
 a {
   display: block;
   text-decoration: none;
