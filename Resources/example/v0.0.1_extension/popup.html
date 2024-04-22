@@ -1,103 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECTS counter for HSLU</title>
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
     <header>
       <p>ECTS counter for HSLU</p>
       <div id="languageswitch">
-        <input
-          type="radio"
-          id="en"
-          name="languageswitch"
-          value="en"
-          checked="checked"
-        />
+        <input type="radio" id="en" name="languageswitch" value="en" checked="checked">
         <label for="en">EN</label>
-        <input type="radio" id="de" name="languageswitch" value="de" />
+        <input type="radio" id="de" name="languageswitch" value="de">
         <label for="de">DE</label>
         <div></div>
       </div>
     </header>
     <main>
       <div id="loader">
-        <svg
-          version="1.1"
-          id="loader-1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          width="40px"
-          height="40px"
-          viewBox="0 0 50 50"
-          style="enable-background: new 0 0 50 50"
-          xml:space="preserve"
-        >
-          <path
-            fill="#503F66"
-            d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z"
-          >
-            <animateTransform
-              attributeType="xml"
-              attributeName="transform"
-              type="rotate"
-              from="0 25 25"
-              to="360 25 25"
-              dur="0.6s"
-              repeatCount="indefinite"
-            />
+        <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+        <path fill="#503F66" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+          <animateTransform attributeType="xml"
+            attributeName="transform"
+            type="rotate"
+            from="0 25 25"
+            to="360 25 25"
+            dur="0.6s"
+            repeatCount="indefinite"/>
           </path>
         </svg>
       </div>
       <div id="notOnPage">
         <p>To see your current ECTS points</p>
-        <h1>Log in to MyCampus</h1>
-        <a
-          href="https://mycampus.hslu.ch/en/stud-i/mein-studium/meine-anmeldungen/"
-          target="_blank"
-          >Open MyCampus</a
-        >
+        <h1>Log in to MyCampus </h1>
+        <a href="https://mycampus.hslu.ch/en/stud-i/mein-studium/meine-anmeldungen/" target="_blank">Open MyCampus</a>
       </div>
       <div id="onPage">
         <p>You currently have</p>
-        <h1>
-          <span class="ectsNum"></span
-          ><span class="ectsDesc"> ECTS points</span>
-        </h1>
+        <h1><span class="ectsNum"></span><span class="ectsDesc"> ECTS points</span></h1>
         <div id="ectsDetails">
           <div>
-            <p>
-              <span class="ectsNum"></span
-              ><span class="ectsDesc">successfully participated</span>
-            </p>
+            <p><span class="ectsNum"></span><span class="ectsDesc">successfully participated</span></p>
           </div>
           <div>
-            <p>
-              <span class="ectsNum"></span
-              ><span class="ectsDesc">confirmed</span>
-            </p>
+            <p><span class="ectsNum"></span><span class="ectsDesc">confirmed</span></p>
           </div>
           <div id="ectsUncategorised">
-            <p>
-              <span class="ectsNum"></span
-              ><span class="ectsDesc">uncategorised</span>
-            </p>
+            <p><span class="ectsNum"></span><span class="ectsDesc">uncategorised</span></p>
           </div>
         </div>
       </div>
     </main>
     <footer>
       <p>Be aware of your filters on MyCampus.</p>
-      <p>
-        Please note the number of ECTS points may be incorrect. You have no
-        guarantee for these points. No data is saved or analysed by this
-        extension.
-      </p>
+      <p>Please note the number of ECTS points may be incorrect. You have no guarantee for these points.
+        No data is saved or analysed by this extension.</p>
     </footer>
   </body>
   <script src="assets/popup.js"></script>
