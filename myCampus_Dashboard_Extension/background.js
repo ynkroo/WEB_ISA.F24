@@ -34,9 +34,15 @@ function getECTS() {
       let ects_kategorie = liElement
         .getElementsByClassName("information")[1]
         .firstElementChild.textContent.trim();
-      if (ects_kategorie == "Erfolgreich teilgenommen") {
+      if (
+        ects_kategorie == "Erfolgreich teilgenommen" ||
+        ects_kategorie == "successfully participated"
+      ) {
         ects[0] += ectsTemp;
-      } else if (ects_kategorie == "Bestätigt") {
+      } else if (
+        ects_kategorie == "Bestätigt" ||
+        ects_kategorie == "confirmed"
+      ) {
         ects[1] += ectsTemp;
       } else {
         ects[2] += ectsTemp;

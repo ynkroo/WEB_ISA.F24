@@ -48,7 +48,7 @@ body {
 }
 
 .sidebar {
-  width: 208px;
+  width: 240px;
   background-color: var(--Blau-50);
   padding: 16px;
   color: var(--Blau-600);
@@ -81,7 +81,12 @@ body {
 
 .link-element {
   display: flex;
-  padding: 8px 0;
+  padding: 8px 0px 8px 8px;
+  transition: all 0.2s;
+}
+
+.link-element:hover {
+  background-color: var(--Blau-200-HSLU-Main);
 }
 
 .quick-link-icon {
@@ -91,7 +96,7 @@ body {
 }
 
 .ects-overview {
-  width: calc(100% - 208px);
+  width: calc(100% - 240px);
   padding: 16px;
   display: flex;
   flex-wrap: wrap;
