@@ -5,6 +5,7 @@
   "description": "Eine Extension, welche eine Übersicht über deine ECTS Punkte generiert.",
   "permissions": ["scripting", "activeTab", "storage"],
   "action": {
+    "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
   "background": {

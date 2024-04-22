@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "myCampus Dashboard",
+  "name": "Dashboard Yannick",
   "version": "1.0.0",
   "description": "Eine Extension, welche eine Übersicht über deine ECTS Punkte generiert.",
   "permissions": ["scripting", "activeTab", "storage"],
