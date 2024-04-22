@@ -43,8 +43,9 @@ body {
   font-size: 14px;
   line-height: 20px;
   width: 800px;
-  height: 488px;
+  min-height: 488px;
   display: flex;
+  color: var(--Blau-800);
 }
 
 .sidebar {
@@ -105,8 +106,19 @@ body {
 
 #total-points-container {
   width: 256px;
+  height: 256px;
   padding: 16px;
   background-color: var(--Blau-200-HSLU-Main);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#moduleinschreibungen-container {
+  width: 256px;
+  height: 256px;
+  padding: 16px;
+  background-color: var(--Blau-50);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -127,19 +139,28 @@ body {
   font-family: "FSAlbert-ExtraBold", sans-serif;
   font-size: 80px;
   color: var(--Blau-800);
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .ectsDesc {
   color: var(--Blau-800);
 }
 
-#moduleinschreibungen-container {
-  width: 256px;
-  padding: 16px;
-  background-color: var(--Blau-50);
+.semester-table-desc {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0px 8px 0px;
+}
+
+.semester-table-content {
   display: flex;
   flex-direction: column;
+}
+
+.table-item {
+  border-top: 0.5px solid var(--Blau-600);
+  padding: 12px 0px;
+  display: flex;
   justify-content: space-between;
 }
 
