@@ -47,8 +47,8 @@ body {
   display: flex;
 }
 
-#notOnPage,
-#onPage {
+body #notOnPage,
+body #onPage {
   display: none;
 }
 
