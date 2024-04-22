@@ -3,6 +3,7 @@ function getECTS() {
 }
 
 function onPage() {
+  // Get Tab and ask to run function for this Tab (idk why its on the Tab)
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     chrome.scripting.executeScript({
       target: { tabId: tabs[0].id },
@@ -43,13 +44,15 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   }
 });
 
-// Ask for URL -> display different content
+// Ask for URL -> display diffrent content
 document.addEventListener("DOMContentLoaded", function () {
   chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
     let url = tabs[0].url;
     if (
       url ==
-      "https://mycampus.hslu.ch/de-ch/stud-i/mein-studium/meine-anmeldungen/"
+        "https://mycampus.hslu.ch/de-ch/stud-i/mein-studium/meine-anmeldungen/" ||
+      url ==
+        "https://mycampus.hslu.ch/en/stud-i/mein-studium/meine-anmeldungen/"
     ) {
       onPage();
     } else {

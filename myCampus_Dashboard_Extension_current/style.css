@@ -47,20 +47,6 @@ body {
   display: flex;
 }
 
-body #notOnPage,
-body #onPage {
-  display: none;
-}
-
-a {
-  display: block;
-  text-decoration: none;
-  padding: 14px 32px 16px;
-  text-align: center;
-  color: var(--Blau-950);
-  background-color: var(--Blau-200-HSLU-Main);
-}
-
 .sidebar {
   width: 240px;
   background-color: var(--Blau-50);

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myCampus Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="onPage">
+    <div class="sidebar">
+      <div>
+        <img
+          id="dashboard-logo"
+          src="assets/MyCampusDashboard_Logo.svg"
+          alt="MyCampus Dashboard Logo"
+        />
+        <div id="quick-links">
+          <div id="quick-links-title">Quick Access</div>
+          <div
+            class="link-element"
+            onclick="window.open('https://mycampus.hslu.ch/de-ch/stud-dfk/')"
+          >
+            <img
+              class="quick-link-icon"
+              src="assets/myCampus_Icon.svg"
+              alt="myCampus Icon"
+            />
+            myCampus
+          </div>
+          <div
+            class="link-element"
+            onclick="window.open('https://mycampus.hslu.ch/de-ch/stud-dfk/moduleinschreibung/')"
+          >
+            <img
+              class="quick-link-icon"
+              src="assets/Moduleinschreibungen_Icon.svg"
+              alt="Moduleinschreibungen Icon"
+            />
+            Moduleinschreibungen
+          </div>
+          <div
+            class="link-element"
+            onclick="window.open('https://mycampus.hslu.ch/de-ch/stud-dfk/mein-studium/mein-edossier/')"
+          >
+            <img
+              class="quick-link-icon"
+              src="assets/infos_und_dokumente_Icon.svg"
+              alt="INfos und Dokumente Icon"
+            />
+            Infos und Dokumente
+          </div>
+          <div
+            class="link-element"
+            onclick="window.open('https://mycampus.hslu.ch/de-ch/stud-dfk/mein-studium/meine-daten/')"
+          >
+            <img
+              class="quick-link-icon"
+              src="assets/account_icon.svg"
+              alt="Account Icon"
+            />
+            Account
+          </div>
+        </div>
+      </div>
+      <img id="hslu-logo" src="assets/HSLU_Logo.svg" alt="HSLU Logo" />
+    </div>
+
+    <div class="ects-overview">
+      <div id="total-points-container">
+        <div class="container-title">Du hast momentan</div>
+        <div>
+          <span class="ectsNum"></span
+          ><span class="ectsDesc"> ECTS Punkte</span>
+        </div>
+      </div>
+      <div id="moduleinschreibungen-container">
+        <div class="container-title">Neue Moduleinschreibungen</div>
+      </div>
+      <div id="semester-uebersicht-container">
+        <div class="container-title">ECTS Punkte Semester Übersicht</div>
+      </div>
+    </div>
+  </body>
+  <script src="popup.js"></script>
+</html>
