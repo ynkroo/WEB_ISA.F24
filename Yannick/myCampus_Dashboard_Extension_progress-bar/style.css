@@ -209,3 +209,36 @@ body {
 .link-element {
   user-select: none; /* Makes the text unselectable */
 }
+
+button {
+  background-color: white;
+  padding: 0.5rem;
+  margin-top: 8px;
+  color: var(--Blau-600);
+  border: none;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: lightblue;
+}
+
+#matrikelnummer {
+  font-family: "FSAlbert-ExtraBold", sans-serif;
+}
+
+#vorname,
+#nachname {
+  font-family: "FSAlbert-ExtraBold", sans-serif;
+  font-size: 32px;
+}
+
+#vorname {
+  position: relative;
+  top: 14px;
+}
+
+#email {
+  position: relative;
+  bottom: 16px;
+}

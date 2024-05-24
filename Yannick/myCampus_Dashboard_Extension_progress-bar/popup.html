@@ -71,6 +71,8 @@
             />
             Account
           </div>
+          <button id="refreshECTSButton">Refresh ECTS</button>
+          <button id="refreshStudentDataButton">Refresh Student Data</button>
         </div>
       </div>
       <img id="hslu-logo" src="assets/HSLU_Logo.svg" alt="HSLU Logo" />
@@ -79,20 +81,25 @@
     <div class="ects-overview">
       <div id="total-points-container">
         <div class="container-title">Du hast momentan</div>
+
         <div>
           <span class="ectsNum"></span><span class="ectsDesc">ECTS Punkte</span>
         </div>
       </div>
       <div id="moduleinschreibungen-container">
-        <div class="container-title">Neue Moduleinschreibungen</div>
-        <div class="container-module">
-          <span class="termin-1">
-            08. Mai 2024, 09:00 Uhr<br />+Focus Module</span
-          ><span class="termin-2">
-            12. März 2024, 09:00 Uhr<br />+Colabor Module</span
-          ><span class="termin-3">
-            05. August 2024, 09:00 Uhr<br />ISA Module</span
-          >
+        <div class="container-title">Meine Daten</div>
+        <div class="data-item">
+          <span class="label"></span><span id="vorname">Loading...</span>
+        </div>
+        <div class="data-item">
+          <span class="label"> </span><span id="nachname">Loading...</span>
+        </div>
+        <div class="data-item">
+          <span class="label"> </span><span id="email">Loading...</span>
+        </div>
+        <div class="data-item">
+          <span class="label">Matrikelnummer: <br /></span
+          ><span id="matrikelnummer"> Loading...</span>
         </div>
       </div>
       <div id="semester-uebersicht-container">

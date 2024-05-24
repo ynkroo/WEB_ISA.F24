@@ -11,6 +11,13 @@
   "background": {
     "service_worker": "background.js"
   },
+
+  "content_scripts": [
+    {
+      "matches": ["https://mycampus.hslu.ch/de-ch/stud-dfk/mein-studium/meine-daten/*"],
+      "js": ["content.js"]
+    }
+  ],
   "content_security_policy": {
     "extension_pages": "default-src 'self'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';"
   }

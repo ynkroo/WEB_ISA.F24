@@ -54,3 +54,53 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
     });
   }
 });
+
+// Name
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  if (message.getStudentData) {
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+      const tab = tabs[0];
+      if (
+        tab.url.includes(
+          "https://mycampus.hslu.ch/de-ch/stud-dfk/mein-studium/meine-daten/"
+        )
+      ) {
+        chrome.tabs.sendMessage(
+          tab.id,
+          { getStudentData: true },
+          function (response) {
+            sendResponse(response);
+          }
+        );
+      } else {
+        sendResponse(null);
+      }
+    });
+    return true; // Keep the message channel open for sendResponse
+  }
+});
+
+//Refresh
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  if (message.getStudentData) {
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+      const tab = tabs[0];
+      if (
+        tab.url.includes(
+          "https://mycampus.hslu.ch/de-ch/stud-dfk/mein-studium/meine-daten/"
+        )
+      ) {
+        chrome.tabs.sendMessage(
+          tab.id,
+          { getStudentData: true },
+          function (response) {
+            sendResponse(response);
+          }
+        );
+      } else {
+        sendResponse(null);
+      }
+    });
+    return true; // Keep the message channel open for sendResponse
+  }
+});
