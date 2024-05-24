@@ -165,7 +165,7 @@ body {
 }
 
 .progress-bar {
-  width: 50%;
+  width: 65%;
   height: 8px;
   background-color: var(--Blau-200-HSLU-Main);
   border-radius: 8px;
@@ -183,7 +183,7 @@ body {
   transition: width 0.5s;
 }
 .progress.over-max {
-  background-color: red; /* Change color when over max */
+  background-color: rgb(233, 186, 19); /* Change color when over max */
   border-radius: 0 8px 8px 0;
   top: 0;
 }

@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Erste Nummer aktuelle ECTS Punkte, Max Value und Threshold Value
-  updateProgressBar("normal-progress-1", "overflow-progress-1", 30, 40, 30);
+  updateProgressBar("normal-progress-1", "overflow-progress-1", 33, 40, 30);
 
   // Erste Nummer aktuelle ECTS Punkte, Max Value und Threshold Value
-  updateProgressBar("normal-progress-2", "overflow-progress-2", 33, 40, 30);
+  updateProgressBar("normal-progress-2", "overflow-progress-2", 30, 40, 30);
 });

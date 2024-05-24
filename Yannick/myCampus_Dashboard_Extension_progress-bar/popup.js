@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
   onPage();
 });
 
+// Funktion zum Öffnen der Quick-Links innerhalb des Fensters
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Popup script loaded"); // Debugging line
 
