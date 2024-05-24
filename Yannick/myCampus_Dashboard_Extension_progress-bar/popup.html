@@ -18,7 +18,7 @@
           <div id="quick-links-title">Quick Access</div>
           <div
             class="link-element"
-            onclick="window.open('https://mycampus.hslu.ch/de-ch/stud-dfk/')"
+            data-url="https://mycampus.hslu.ch/de-ch/stud-dfk/"
           >
             <img
               class="quick-link-icon"
@@ -29,7 +29,7 @@
           </div>
           <div
             class="link-element"
-            onclick="window.open('https://mycampus.hslu.ch/de-ch/stud-dfk/moduleinschreibung/')"
+            data-url="https://mycampus.hslu.ch/de-ch/stud-dfk/moduleinschreibung/"
           >
             <img
               class="quick-link-icon"
@@ -40,18 +40,29 @@
           </div>
           <div
             class="link-element"
-            onclick="window.open('https://mycampus.hslu.ch/de-ch/stud-dfk/mein-studium/mein-edossier/')"
+            data-url="https://mycampus.hslu.ch/de-ch/stud-dfk/mein-studium/mein-edossier/"
           >
             <img
               class="quick-link-icon"
               src="assets/infos_und_dokumente_Icon.svg"
-              alt="INfos und Dokumente Icon"
+              alt="Infos und Dokumente Icon"
             />
             Infos und Dokumente
           </div>
           <div
             class="link-element"
-            onclick="window.open('https://mycampus.hslu.ch/de-ch/stud-dfk/mein-studium/meine-daten/')"
+            data-url="https://mycampus.hslu.ch/de-ch/stud-dfk/mein-studium/meine-anmeldungen/"
+          >
+            <img
+              class="quick-link-icon"
+              src="assets/meine_anmeldungen.svg"
+              alt="Anmeldungen Icon"
+            />
+            Meine Anmeldungen
+          </div>
+          <div
+            class="link-element"
+            data-url="https://mycampus.hslu.ch/de-ch/stud-dfk/mein-studium/meine-daten/"
           >
             <img
               class="quick-link-icon"
@@ -91,11 +102,26 @@
           ><span>Punkte Total</span>
         </div>
         <div class="semester-table-content">
-          <div class="table-item"><span>F2401</span><span>30 ECTS</span></div>
-          <div class="table-item"><span>F2301</span><span>33 ECTS</span></div>
+          <div class="table-item">
+            <span>F2401</span>
+            <div class="progress-bar" id="progress-bar-1">
+              <div class="progress" id="normal-progress-1"></div>
+              <div class="progress over-max" id="overflow-progress-1"></div>
+            </div>
+            <span>30 ECTS</span>
+          </div>
+          <div class="table-item">
+            <span>F2301</span>
+            <div class="progress-bar" id="progress-bar-2">
+              <div class="progress" id="normal-progress-2"></div>
+              <div class="progress over-max" id="overflow-progress-2"></div>
+            </div>
+            <span>33 ECTS</span>
+          </div>
         </div>
       </div>
     </div>
   </body>
   <script src="popup.js"></script>
+  <script src="progress.js"></script>
 </html>

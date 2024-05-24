@@ -36,3 +36,18 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
 document.addEventListener("DOMContentLoaded", function () {
   onPage();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("Popup script loaded"); // Debugging line
+
+  const linkElements = document.querySelectorAll(".link-element");
+
+  linkElements.forEach(function (element) {
+    element.addEventListener("click", function (event) {
+      event.preventDefault();
+      const url = element.getAttribute("data-url");
+      console.log("Navigating to URL:", url); // Debugging line
+      chrome.tabs.update({ url: url });
+    });
+  });
+});

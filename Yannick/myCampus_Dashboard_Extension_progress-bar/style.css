@@ -164,6 +164,30 @@ body {
   justify-content: space-between;
 }
 
+.progress-bar {
+  width: 50%;
+  height: 8px;
+  background-color: var(--Blau-200-HSLU-Main);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 5px;
+  position: relative;
+}
+.progress {
+  height: 8px;
+  background-color: var(--Blau-600);
+  border-radius: 8px 0 0 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+.progress.over-max {
+  background-color: red; /* Change color when over max */
+  border-radius: 0 8px 8px 0;
+  top: 0;
+}
+
 .container-module {
   display: flex;
   flex-direction: column;
@@ -180,4 +204,8 @@ body {
   align-items: flex-end;
   border-left: 4px solid var(--Blau-600);
   background-color: white;
+}
+
+.link-element {
+  user-select: none; /* Makes the text unselectable */
 }
