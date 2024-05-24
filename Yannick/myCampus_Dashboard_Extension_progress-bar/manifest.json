@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "myCampus Dashboard",
+  "version": "1.0.0",
+  "description": "Eine Extension, welche eine Übersicht über deine ECTS Punkte generiert.",
+  "permissions": ["scripting", "activeTab", "storage"],
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
