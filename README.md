@@ -4,11 +4,11 @@
 
 > **Zum Figma-Projekt:**<br>[Figma-Projekt ansehen](https://www.figma.com/file/scRsCeKv708nT8tqpZDO9J/MyCampus-Dashboard?type=design&node-id=0%3A1&mode=design&t=Ig4YIOSiej5PSKzE-1)
 
-> **Live-Extension**<br> https://ynkroo.github.io/WEB_ISA.F24/myCampus_Dashboard_Extension_current/popup.html
+> **Live-Extension**<br> https://ynkroo.github.io/WEB_ISA.F24/myCampus_Dashboard_Extension/popup.html
 
 <br>
 
-![Styleguide](myCampus_Dashboard_Extension_current/assets/Styleguide.png)
+![Styleguide](Extension_Version_ARCHIVE/myCampus_Dashboard_Extension_current/assets/Styleguide.png)
 
 <br>
 
