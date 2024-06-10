@@ -166,7 +166,7 @@ body {
 
 .progress-bar {
   width: 65%;
-  height: 8px;
+  height: 10px;
   background-color: var(--Blau-200-HSLU-Main);
   border-radius: 8px;
   overflow: hidden;
@@ -174,7 +174,7 @@ body {
   position: relative;
 }
 .progress {
-  height: 8px;
+  height: 10px;
   background-color: var(--Blau-600);
   border-radius: 8px 0 0 8px;
   position: absolute;
@@ -184,7 +184,7 @@ body {
 }
 .progress.over-max {
   background-color: rgb(233, 186, 19); /* Change color when over max */
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 0px 0px 0;
   top: 0;
 }
 
@@ -241,4 +241,12 @@ button:hover {
 #email {
   position: relative;
   bottom: 16px;
+}
+
+.threshold-line {
+  position: relative;
+  left: 75%;
+  height: 100%;
+  width: 3px;
+  background-color: #f3f9fc;
 }
